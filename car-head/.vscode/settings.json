@@ -1,0 +1,27 @@
+{
+    "cortex-debug.openocdPath": "C:/Users/asion/Downloads/OpenOCD-20250710-0.12.0/bin/openocd.exe",
+    "cortex-debug.gdbPath": "C:/ST/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gdb.exe",
+    "files.associations": {
+        "main.h": "c",
+        "afio.h": "c",
+        "stdint.h": "c",
+        "gpio.h": "c"
+    },
+    "cmake.cmakePath": "cube-cmake",
+    "cmake.configureArgs": [
+        "-DCMAKE_COMMAND=cube-cmake"
+    ],
+    "cmake.preferredGenerators": [
+        "Ninja"
+    ],
+    "stm32cube-ide-clangd.path": "cube",
+    "stm32cube-ide-clangd.arguments": [
+        "starm-clangd",
+        "--query-driver=${env:CUBE_BUNDLE_PATH}/gnu-tools-for-stm32/13.3.1+st.9/bin/arm-none-eabi-gcc.exe",
+        "--query-driver=${env:CUBE_BUNDLE_PATH}/gnu-tools-for-stm32/13.3.1+st.9/bin/arm-none-eabi-g++.exe"
+    ],
+    "CodeGPT.apiKey": "Claude Code",
+    "idf.pythonInstallPath": "D:\\ESP32_IDF\\Espressif\\tools\\idf-python\\3.11.2\\python.exe",
+    "idf.currentSetup": "D:/ESP32_IDF/Espressif/frameworks/esp-idf-v5.4.3/",
+    "cortex-debug.variableUseNaturalFormat": false
+}

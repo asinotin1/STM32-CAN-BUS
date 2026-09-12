@@ -1,0 +1,258 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "screen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 1,
+            "Width": 480,
+            "Height": 272,
+            "RelativeFilename": "__generated\\glass_theme_images_backgrounds_480x272_water_lights.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image3",
+            "X": 390,
+            "Width": 90,
+            "Height": 90,
+            "RelativeFilename": "speed.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image4",
+            "X": 248,
+            "Width": 90,
+            "Height": 60,
+            "RelativeFilename": "nhietdodc.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image5",
+            "X": 108,
+            "Width": 90,
+            "Height": 90,
+            "RelativeFilename": "humidity.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image6",
+            "Width": 90,
+            "Height": 90,
+            "RelativeFilename": "nhietdo.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image7",
+            "Y": 152,
+            "Width": 120,
+            "Height": 120,
+            "RelativeFilename": "car.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "temperature",
+            "X": 1,
+            "Y": 90,
+            "Width": 137,
+            "Height": 20,
+            "TextId": "temperature",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "temperaturebuffer",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "humidity",
+            "X": 120,
+            "Y": 90,
+            "Width": 137,
+            "Height": 20,
+            "TextId": "humidity",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "humiditybuffer",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "thermatic",
+            "X": 248,
+            "Y": 60,
+            "Width": 137,
+            "Height": 20,
+            "TextId": "THERMATIC",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "thermaticbuffer",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "speed",
+            "X": 406,
+            "Y": 90,
+            "Width": 137,
+            "Height": 20,
+            "TextId": "SPEED",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "SPEEDBUFFER",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "Image",
+            "Name": "left",
+            "X": 120,
+            "Y": 192,
+            "Width": 80,
+            "Height": 60,
+            "RelativeFilename": "leftred.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "right",
+            "X": 394,
+            "Y": 200,
+            "Width": 80,
+            "Height": 45,
+            "RelativeFilename": "rightred.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "waring",
+            "X": 219,
+            "Y": 214,
+            "Width": 45,
+            "Height": 45,
+            "RelativeFilename": "waringred.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "tuikhi",
+            "X": 316,
+            "Y": 214,
+            "Width": 45,
+            "Height": 45,
+            "RelativeFilename": "tuikhicolor.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "call",
+            "X": 180,
+            "Y": 122,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_disabled.png",
+            "Released": "call.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "nocall",
+            "X": 286,
+            "Y": 122,
+            "Width": 60,
+            "Height": 60,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_icon_round_tiny_fill_disabled.png",
+            "Released": "nocall.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "call"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "triggerCall();"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nocall"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Code": "triggerHangup();"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "car-head",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "screen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": false
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H743/753",
+    "Toolchain": "CMake",
+    "Platform": "m7",
+    "ProjectFile": "../car-head.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.26.0"
+}
